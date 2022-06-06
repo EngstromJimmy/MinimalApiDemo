@@ -5,7 +5,7 @@ One of the biggest selling points of minimal APIs is that you can have all the A
 Minimal APIs have a really nice API surface with dependency injection and handling of parameters and all of that goodness. I think that even if you have a really big API, you could use minimal API simply because they are in my opinion (just as they claim to be) easier, quicker, and nicer to work with.
 
 This is how we do it.  
-First of all, we have created extension methods where we define our endpoints. So now we have different classes defining different endpoints. This way we won't have everything in one file. We're calling these extension methods from our program.cs  Inside of the endpoints we are injecting services, services that are testable, services that are only injected into the methods that used them, and it makes the endpoint code really small.
+First of all, we have created extension methods where we define our endpoints. So now we have different classes defining different endpoints. This way we won't have everything in one file. We're calling these extension methods from our program.cs. Inside of the endpoints we are injecting services, services that are testable, services that are only injected into the methods that used them, and it makes the endpoint code really small.
 
 We create an extension method class for each endpoint collection we would like to group (kinda the same way we would group things in a controller).
 
